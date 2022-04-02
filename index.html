@@ -9,37 +9,32 @@
     
 </head>
 <body>
-    <header>
-    <div class="hero">
-		<nav>
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-			</ul>
-        </nav>
-    </header>
-            <!-- home section -->
-        <div class="all">  
-            <div class="one">
-        <header class="home" id="home">   
-            <figure1><img src="/img/dog.jpg"></figure1>
-                <h1>Adnan Abdallah</h1>
-                <p>Software Developer</p> 
-                <div class="logo">
-                <a href="https://www.linkedin.com/in/adnanabdallah/">
-                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="https://github.com/AdnanA2">
-                    <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
-                </div>
-                <a href="/img/resume.pdf" class="button">Download <br>Resume
-                    <ion-icon  name="cloud-download-outline"></ion-icon>
-                </a>
-
-        </header>
+  <section class="hero">
+    <nav>
+        <ul id="nav-list">
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero-area">
+        <div id="particles-js"></div>
+        <div class="hero-text">
+          <h1>Adnan Abdallah</h1>
+          <p>Full Stack Developer</p>
+          <div class="about"><a href="#about-me">About me</a></div>
+          <a href="img/AdnanAbdallahResume.pdf" class="button" target="_blank">Download Resume</a>
+      </div>
+      <div class="socials">              
+          <div><a href="https://github.com/AdnanA2"  class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a></div>
+          <div><a href="https://www.linkedin.com/in/adnanabdallah/"  class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+          </a></div>
+      </div>
+    </div>
+</section>
         <!-- end home section -->
         
     <!-- About section -->
@@ -57,22 +52,36 @@
         <!-- finish about section -->
         <!-- project sction -->
             <section id="projects">
-                <div class="item" id="projects">
+                <div class="projects" id="projects">
                     <div>
                   <h2>Project</h2>                     
-                        <div>
+                        <div class="project-card">
                         <p>Virtual Pet</p>
                         <div class="img">                       
-                        <img src="./img/virtualpet.JPG" alt="">     
+                        <img src=" alt="">     
                         </div>
-                        <p>This project is a Virtual Pet and it allows you to  adopt a organic pet or mechanical pet to the shelter. You  have the ability to water, feed, play, and clean a organic pet or you can oil and maintain and charge a mechanical pet.</p>
-                        </div>         
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque placeat aliquam veritatis necessitatibus nihil. Molestias magnam illo suscipit tempora nobis blanditiis perferendis. Voluptates est ipsum, vel tenetur praesentium consequuntur odio..</p>
+                        </div>  
+                        <div class="project-card">
+                          <p>Virtual Pet</p>
+                          <div class="img">                       
+                          <img src="./img/virtualpet.JPG" alt="">     
+                          </div>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque placeat aliquam veritatis necessitatibus nihil. Molestias magnam illo suscipit tempora nobis blanditiis perferendis. Voluptates est ipsum, vel tenetur praesentium consequuntur odio..</p>
+                          </div>
+                          <div class="project-card">
+                            <p>Virtual Pet</p>
+                            <div class="img">                       
+                            <img src="./img/virtualpet.JPG" alt="">     
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque placeat aliquam veritatis necessitatibus nihil. Molestias magnam illo suscipit tempora nobis blanditiis perferendis. Voluptates est ipsum, vel tenetur praesentium consequuntur odio..</p>
+                            </div>      
                     </div>                
               </section>
             <!-- end project section -->
 
-                   <!--contact section -->
-              <section id="contact">
+                   <!-- contact section -->
+              <!-- <section id="contact">
               <div class="contact">
                 <div style="text-align:center">
                   <h2>Contact ME</h2>
@@ -86,24 +95,23 @@
                       <label for="lname">Last Name</label>
                       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                       <label for="lname">Email</label>
-                      <input type="text" id="email" name="Email" placeholder="Your email..">
+                      <input type="text" id="email" name="email" placeholder="Your email..">
                       <label for="subject">Subject</label>
                       <textarea id="subject" name="subject" placeholder="Subject.." style="height:170px"></textarea>
                       <input type="submit" value="Submit">
                     </form>
                   </div>
                 </div>
-              </div>
-
+              </div> -->
+        </div>
               <!-- end contact section -->
               <!-- footer section-->
               <section id="copyright">
                 <div class="container">
-                  <p> &copy; Copyright 2022 Adnan Abdallah. All right Reserved</p>
+                  <p> &copy; 2022 Adnan Abdallah. All right Reserved</p>
                 </div>
               </section>
               <!-- end of footer -->
-        </div>
        
 
         </button>
