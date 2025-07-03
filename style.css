@@ -1,136 +1,188 @@
+/* === ROOT VARIABLES & GLOBAL STYLES === */
+:root {
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+
+  /* Color Palette (Light Mode) */
+  --bg-primary: #FDFDFD;
+  --bg-secondary: #F3F4F6;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --accent: #3772FF; /* A nice, modern blue */
+  --border-color: #E5E7EB;
+  --card-bg: #FFFFFF;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --tag-bg: #E5E7EB;
+  --tag-text: #4B5563;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-primary);
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #222;
-  transition: background 0.3s, color 0.3s;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
 }
 
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw + 1rem, 2.5rem);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+main, section {
+  padding: 4rem 1.5rem;
+}
+
+/* === HERO SECTION === */
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  padding: 4rem 1.5rem;
 }
 
 .tagline {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 1rem auto 0;
 }
 
 .subtagline {
   font-size: 1rem;
   margin-top: 0.5rem;
-  color: #666;
+  color: var(--text-secondary);
+}
+
+.hero-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .hero-links a {
   display: inline-block;
-  margin: 1rem 0.5rem;
-  padding: 0.5rem 1rem;
-  background: #000;
-  color: #fff;
+  padding: 0.75rem 1.5rem;
+  background: var(--text-primary);
+  color: var(--bg-primary);
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.2s;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .hero-links a:hover {
-  background: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  opacity: 1;
 }
 
-.hero-links .btn {
-  background: #000;
-  color: #fff;
-}
-
-.hero-links .btn:hover {
-  background: #444;
-}
-
+/* === PROJECTS SECTION === */
 .projects-section {
-  padding: 3rem 2rem;
-  background-color: #f9f9f9;
-}
-
-.projects-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .projects-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
 .project-card {
-  background: #fff;
+  background: var(--card-bg);
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--shadow-color);
 }
 
 .project-card h3 {
   margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  flex-grow: 1;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 
 .stack {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0.5rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.project-card a.btn, .private-tag {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 0.75rem;
-  background: #000;
-  color: #fff;
-  padding: 0.4rem 0.9rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: #333;
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 .private-tag {
   display: inline-block;
-  margin-top: 0.75rem;
   font-size: 0.85rem;
-  background: #eee;
-  color: #555;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-}
-
-.project-img {
-  width: 100%;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 0.4rem 0.8rem;
   border-radius: 6px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 500;
 }
 
+/* === SKILLS SECTION === */
 .skills {
-  padding: 3rem 2rem;
-  background: #fff;
+  padding: 4rem 1.5rem;
   text-align: center;
-}
-
-.skills h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
 .skills-list {
@@ -139,12 +191,61 @@ body {
   justify-content: center;
   list-style: none;
   padding: 0;
-  gap: 1rem;
+  gap: 0.75rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .skills-list li {
-  background: #f0f0f0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 8px;
+  font-weight: 500;
   font-size: 0.95rem;
+}
+
+/* === ANIMATION STYLES === */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === MEDIA QUERIES === */
+@media (min-width: 768px) {
+  main, section {
+    padding: 5rem 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main, section {
+    padding: 6rem 3rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
 } 
