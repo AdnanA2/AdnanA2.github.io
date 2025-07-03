@@ -41,4 +41,67 @@ body {
 
 .hero-links a:hover {
   background: #444;
+}
+
+.projects-section {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.stack {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background: #000;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.private-tag {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  background: #eee;
+  color: #555;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
 } 
