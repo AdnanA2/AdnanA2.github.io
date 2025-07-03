@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project: Outreach Engine | Adnan Abdallah</title>
+  <meta name="description" content="A detailed look at the Outreach Engine, an AI-powered outreach automation tool for healthcare.">
+
+  <!-- Links to Fonts, Devicon, and Main Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <div class="theme-switch-wrapper">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider"></span></label>
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-page-hero">
+      <h1>Outreach Engine</h1>
+      <p class="tagline">AI-powered outreach automation for healthcare, with HIPAA-conscious workflows and Mailgun integration.</p>
+    </section>
+
+    <div class="project-detail-section">
+      <h3>Tech Stack</h3>
+      <div class="skills-grid" style="max-width: 600px;">
+        <div class="skill-card"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+        <div class="skill-card"><i class="devicon-react-original-wordmark colored"></i><span>React</span></div>
+        <div class="skill-card"><i class="devicon-nodejs-plain-wordmark colored"></i><span>Node.js</span></div>
+        <div class="skill-card"><i class="devicon-mongodb-plain-wordmark colored"></i><span>MongoDB</span></div>
+        <div class="skill-card"><i class="devicon-google-plain"></i><span>Mailgun API</span></div>
+      </div>
+    </div>
+
+    <div class="project-detail-section">
+      <h3>Screenshots</h3>
+      <div class="screenshots-grid">
+        <img src="https://via.placeholder.com/800x600.png?text=Campaign+Builder" alt="Placeholder image for campaign builder">
+        <img src="https://via.placeholder.com/800x600.png?text=Analytics+Dashboard" alt="Placeholder image for analytics dashboard">
+      </div>
+    </div>
+
+    <div class="project-detail-section">
+      <h3>Key Features</h3>
+      <ul class="features-list">
+        <li><strong>AI-Powered Content Generation:</strong> Utilizes AI to generate personalized outreach messages, increasing engagement rates.</li>
+        <li><strong>HIPAA-Conscious Workflow:</strong> All automated and manual processes are designed to be mindful of patient data privacy standards.</li>
+        <li><strong>Mailgun Integration:</strong> Robust integration with the Mailgun API for reliable, high-volume email delivery and tracking.</li>
+        <li><strong>Analytics & Reporting:</strong> Provides a dashboard to track key metrics like open rates, click rates, and reply rates.</li>
+      </ul>
+    </div>
+    
+    <div class="project-detail-section">
+      <h3>Challenges & Solutions</h3>
+      <ul class="features-list">
+        <li><strong>Challenge:</strong> Integrating an AI model for safe and relevant content generation without compromising patient privacy.<br><strong>Solution:</strong> Developed a strict data sanitization pipeline that anonymizes all patient data before it is processed by the AI model.</li>
+        <li><strong>Challenge:</strong> Ensuring high deliverability and avoiding spam filters for automated outreach.<br><strong>Solution:</strong> Implemented Mailgun best practices, including custom tracking domains, DKIM/SPF records, and gradual warm-up schedules for new campaigns.</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-section">
+      <div class="project-cta">
+        <h2>Interested in a Demo?</h2>
+        <p class="description" style="margin-bottom: 1.5rem;">The source code for this project is private, but I would be happy to provide a live demonstration and walk through the codebase.</p>
+        <a href="mailto:adnan.abdallah@example.com" class="contact-btn">Request a Demo</a>
+      </div>
+    </div>
+
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Adnan Abdallah. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 

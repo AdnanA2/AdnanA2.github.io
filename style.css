@@ -375,13 +375,19 @@ main, section {
   padding: 0 1.5rem;
   height: 60px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   z-index: 100;
+}
+
+.site-header .back-link {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  text-decoration: none;
 }
 
 [data-theme="dark"] .site-header {
@@ -428,4 +434,87 @@ input:checked + .slider:before { transform: translateX(24px); }
     color: var(--color-text-secondary);
     width: 20px;
     height: 20px;
+}
+
+/* === PROJECT PAGE SPECIFIC STYLES === */
+.project-page-hero {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-page-hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.project-page-hero .tagline {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+}
+
+.project-detail-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-lg) 1.5rem;
+}
+
+.project-detail-section h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+.screenshots-grid img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.features-list li {
+  background-color: var(--color-surface);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  line-height: 1.5;
+}
+
+.features-list strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.project-cta {
+  text-align: center;
+  padding: var(--space-lg) 1.5rem;
+  background-color: var(--color-surface);
+  margin-top: var(--space-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+/* === CLICKABLE PROJECT CARDS === */
+a.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 } 

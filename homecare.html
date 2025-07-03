@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project: HomeCare SaaS | Adnan Abdallah</title>
+  <meta name="description" content="A detailed look at the HomeCare SaaS project, a secure platform for managing Medicaid referrals.">
+  
+  <!-- Links to Fonts, Devicon, and Main Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <div class="theme-switch-wrapper">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider"></span></label>
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-page-hero">
+      <h1>HomeCare SaaS</h1>
+      <p class="tagline">Secure SaaS platform for managing Medicaid referrals, file uploads, and user roles.</p>
+    </section>
+
+    <div class="project-detail-section">
+      <h3>Tech Stack</h3>
+      <div class="skills-grid" style="max-width: 600px;">
+        <div class="skill-card"><i class="devicon-java-plain-wordmark colored"></i><span>Java</span></div>
+        <div class="skill-card"><i class="devicon-spring-plain-wordmark colored"></i><span>Spring Boot</span></div>
+        <div class="skill-card"><i class="devicon-react-original-wordmark colored"></i><span>React</span></div>
+        <div class="skill-card"><i class="devicon-docker-plain-wordmark colored"></i><span>Docker</span></div>
+        <div class="skill-card"><i class="devicon-postgresql-plain-wordmark colored"></i><span>PostgreSQL</span></div>
+      </div>
+    </div>
+
+    <div class="project-detail-section">
+      <h3>Screenshots</h3>
+      <div class="screenshots-grid">
+        <img src="https://via.placeholder.com/800x600.png?text=Login+Screen" alt="Placeholder image for login screen">
+        <img src="https://via.placeholder.com/800x600.png?text=Dashboard+View" alt="Placeholder image for dashboard view">
+      </div>
+    </div>
+
+    <div class="project-detail-section">
+      <h3>Key Features</h3>
+      <ul class="features-list">
+        <li><strong>Role-Based Access Control:</strong> Securely managed user roles (Admin, Case Worker, Viewer) with granular permissions.</li>
+        <li><strong>Secure File Management:</strong> End-to-end encrypted file uploads, storage, and retrieval for sensitive patient documents.</li>
+        <li><strong>Referral Management System:</strong> A complete workflow for creating, tracking, and managing Medicaid patient referrals.</li>
+        <li><strong>Containerized Deployment:</strong> Fully containerized with Docker for consistent development, testing, and production environments.</li>
+      </ul>
+    </div>
+    
+    <div class="project-detail-section">
+      <h3>Challenges & Solutions</h3>
+      <ul class="features-list">
+        <li><strong>Challenge:</strong> Ensuring HIPAA compliance for all data in transit and at rest.<br><strong>Solution:</strong> Implemented stringent encryption protocols, secure token-based authentication (JWT), and comprehensive audit logs.</li>
+        <li><strong>Challenge:</strong> Building a dynamic and responsive user interface for complex forms and data tables.<br><strong>Solution:</strong> Leveraged React with a component-based architecture and state management to create a seamless and intuitive user experience.</li>
+      </ul>
+    </div>
+
+    <div class="project-detail-section">
+      <div class="project-cta">
+        <h2>Interested in a Demo?</h2>
+        <p class="description" style="margin-bottom: 1.5rem;">The source code for this project is private, but I would be happy to provide a live demonstration and walk through the codebase.</p>
+        <a href="mailto:adnan.abdallah@example.com" class="contact-btn">Request a Demo</a>
+      </div>
+    </div>
+
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Adnan Abdallah. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
